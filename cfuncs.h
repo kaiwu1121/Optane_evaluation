@@ -1,5 +1,10 @@
 #include <stdio.h>
+#include "cpucounters.h"
 
-void startcounter_();
-void stopcounter_();
-void passparameters_(void* p);
+extern "C" void startcounter_();
+extern "C" void stopcounter_();
+extern "C" void passparameters_(void* p);
+
+
+static SystemCounterState before_sstate;
+static SystemCounterState after_sstate;
