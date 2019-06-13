@@ -1,3 +1,7 @@
+git clone https://github.com/BoxLib-Codes/BoxLib.git
+
+mkdir BoxLib/build
+
 cd BoxLib/build
 
 cmake ..
